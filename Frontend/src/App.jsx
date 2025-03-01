@@ -1,8 +1,13 @@
+import LandingPage from './LandingPage/LandingPage';
+import Auth from './Auth/Auth';
+
 function App() {
 
   return (
     <>
-    <h1>Hello</h1>
+  <LandingPage/>
+  <Auth/>
+  
     </>
   )
 }

@@ -2,13 +2,13 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-function StudentLogin() {
+function Page5() {
 
   return (
     <>
-    <h1>Student Login</h1>
+    <h1>Page5</h1>
     </>
   )
 }
 
-export default StudentLogin
+export default Page5
