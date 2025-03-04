@@ -5,14 +5,14 @@ function Page1() {
 
   return (
     <>
-    <div className="container-fluid bg py-5 px-5">
+    <div className="container-fluid bg py-5 px-5 heropage" >
     <div class="row my-0">
           <div className="col-sm-6 text-center my-5">
-              <h2 className='heading'>Attendence Management System</h2>
-              <p className="">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p className=""><small>Last updated 3 mins ago</small></p>
+              <h2 className='heading'>Welcome to Our Attendance Management System</h2>
+              <p className="subheading">Effortlessly track teacher and student attendance with our automated system. Save time, reduce errors, and enhance the academic experience.</p>
+              
             </div>
-            <div className='col-sm-6'><img src="isha_image\girltakinglaptop.png" class="card-img" alt="..." height="80%" width="35%"/></div>
+            <div className='col-sm-6'><img src="isha_image\girltakinglaptop.png" className="card-img photo" alt="..." height="80%" width="35%"/></div>
         
   
     </div>

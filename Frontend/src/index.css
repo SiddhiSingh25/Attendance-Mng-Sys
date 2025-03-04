@@ -6,13 +6,39 @@
 }
 
 .heading{
+  padding-top: 20vh;
   color: #0059bd;
+  font-size:3.5rem ;
+  font-weight: bolder;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.subheading{
+  padding-top: 4vh;
+  color: #000000;
+  font-size:1.3rem ;
+  font-weight: 500;
+  padding-left: 2vh;
+  padding-right: 2vh;
 }
 
 .bg{
   background-image: url('./isha_image/background.png');
   background-repeat: no-repeat;
   height: 700px;
+}
+
+.heropage
+{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.photo
+{
+  padding-top: 5vh;
+  position: relative;
 }
 
 /* page2 backgrounds */
@@ -105,5 +131,26 @@
     font-size:2rem;
     padding: 2rem 3rem;
   }
+  .heading{
+    padding-top: 5vh;
+    color: #0059bd;
+    font-size:2.3rem ;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .subheading{
+    padding-top: 1vh;
+    color: #000000;
+    font-size:1rem ;
+    font-weight: 500;
+    padding-left: 2vh;
+    padding-right: 2vh;
+  }
+  .photo
+{
+  padding-top: 0vh;
+  padding-bottom: 5vh;
+}
+  
   
 }
