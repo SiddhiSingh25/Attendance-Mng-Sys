@@ -1,6 +1,10 @@
+
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 const ResourceCards = () => {
   const resources = [
     {
@@ -30,6 +34,7 @@ const ResourceCards = () => {
   ];
 
   return (
+
     <div
       className="container-fluid py-5"
       style={{ backgroundColor: "#e3f2fd" }}
@@ -83,5 +88,16 @@ const ResourceCards = () => {
     </div>
   );
 };
+    <>
+    <div className='page3background'>
+      <p><FontAwesomeIcon icon={faQuoteLeft} /></p>
+      Technology is just a tool. In term of getting the kids working together and motiveting them,
+         the teacher is the most important thing.
+         <h5 className='pt-4'>-Bill Gates</h5>
+    </div>
+    </>
+  )
+}
+>>>>>>> 60a837438fc9173cb36267d1eee1bacdae2cff05
 
 export default ResourceCards;

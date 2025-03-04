@@ -1,6 +1,7 @@
 import LandingPage from './LandingPage/LandingPage';
 import Auth from './Auth/Auth';
 
+
 function App() {
 
   return (
