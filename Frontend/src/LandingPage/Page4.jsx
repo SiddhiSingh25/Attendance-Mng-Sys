@@ -1,134 +1,90 @@
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 
-const testimonials = [
-  {
-    name: "Mitul Golakiya",
-    position: "CEO",
-    company: "Infyom Technologies",
-    feedback:
-      "All in one Communication tool you need. We are not able to think of any other tool once we moved to UBS. It made our day-to-day communications and project management so easy.",
-    imgSrc: "https://randomuser.me/api/portraits/men/1.jpg",
-    bgColor: "#fdeedc",
-  },
-  {
-    name: "Alpesh Gediya",
-    position: "Chapter Lead",
-    company: "Telstra India",
-    feedback:
-      "I absolutely love how innovative and efficient this software has been. With a number of changes and upgrades coming our way, it has been a pleasure to understand and use this software.",
-    imgSrc: "https://randomuser.me/api/portraits/men/2.jpg",
-    bgColor: "#dceefb",
-  },
-  {
-    name: "Krunal Vaghasiya",
-    position: "CEO",
-    company: "Tatvam Cloud Solutions",
-    feedback:
-      "I think UBS is an exciting platform with a company that has forward-thinking and built around objectives. We have been using it for the last three months for our project management, and productivity has definitely been on a surge to growth.",
-    imgSrc: "https://randomuser.me/api/portraits/men/3.jpg",
-    bgColor: "#f8d7da",
-  },
-  {
-    name: "Jane Doe",
-    position: "Manager",
-    company: "Tech Solutions",
-    feedback:
-      "UBS has been a game-changer for our team. It has streamlined our processes and improved efficiency significantly.",
-    imgSrc: "https://randomuser.me/api/portraits/women/4.jpg",
-    bgColor: "#fdeedc",
-  },
-  {
-    name: "John Smith",
-    position: "CTO",
-    company: "Innovatech",
-    feedback:
-      "Using UBS has simplified our workflow, making collaboration seamless and effective.",
-    imgSrc: "https://randomuser.me/api/portraits/men/5.jpg",
-    bgColor: "#dceefb",
-  },
-  {
-    name: "Emily Johnson",
-    position: "Project Lead",
-    company: "CloudNet",
-    feedback:
-      "UBS provided us with a structured and efficient approach to project management. Highly recommended!",
-    imgSrc: "https://randomuser.me/api/portraits/women/6.jpg",
-    bgColor: "#f8d7da",
-  },
-];
-
-const TestimonialsSlider = () => {
-  const [index, setIndex] = useState(0);
-
-  const nextSlide = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-  };
-
-  const prevSlide = () => {
-    setIndex(
-      (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
-    );
-  };
+const Page4 = () => {
+  const resources = [
+    {
+      title: "Quick Attendance Management Features",
+      description:
+        "Pocket HRMS gives you & your employees the best experience through our attendance management system.",
+      imgSrc:
+        "https://www.skoolbeep.com/blog/wp-content/uploads/2020/12/What-is-an-attendence-manangemnt-system.png",
+      buttonText: "Check out other videos",
+    },
+    {
+      title: "AI-Based Attendance System Guide and Overview",
+      description:
+        "The Revolutionize attendance tracking with Pocket HRMS’ AI-powered Attendance Management System.",
+      imgSrc:
+        "https://www.pockethrms.com/wp-content/uploads/2020/08/AI-based-Smart-Attendance-System-Blog-Banner-scaled.webp",
+      buttonText: "Read More",
+    },
+    {
+      title: "Pocket HRMS Attendance Management Solution limited",
+      description:
+        "Attendance & time tracking is the most crucial aspect for optimum employee management since it forms.",
+      imgSrc:
+        "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?cs=srgb&dl=pexels-olly-3756679.jpg&fm=jpg",
+      buttonText: "Read More",
+    },
+  ];
 
   return (
-    <div className="container py-5">
-      <h2 className="text-center mb-3">What Our Clients Say</h2>
-      <p className="text-center mb-4 text-muted">
-        We Are Glad To Be A Reason For The Smiles We Put On Our Client’s Faces.
-      </p>
-      <div className="d-flex justify-content-center overflow-hidden position-relative">
-        <div
-          className="d-flex"
-          style={{
-            transition: "transform 0.5s ease",
-            transform: `translateX(-${index * 40}%)`,
-            width: `${testimonials.length * 40}%`,
-          }}
-        >
-          {testimonials.concat(testimonials[0]).map((testimonial, i) => (
-            <div
-              key={i}
-              className="p-3"
-              style={{ minWidth: "40%", flex: "0 0 40%" }}
-            >
-              <div
-                className="card p-4 d-flex flex-column align-items-center text-center"
-                style={{ backgroundColor: testimonial.bgColor, height: "100%" }}
-              >
-                <img
-                  src={testimonial.imgSrc}
-                  alt={testimonial.name}
-                  className="rounded-circle mb-3"
-                  width="60"
-                  height="60"
-                />
-                <h5 className="mb-1">{testimonial.name}</h5>
-                <small className="text-muted mb-2">
-                  {testimonial.company} | {testimonial.position}
-                </small>
-                <p className="mb-0 flex-grow-1">{testimonial.feedback}</p>
+    <div
+      className="container-fluid py-5"
+      style={{ backgroundColor: "#e3f2fd" }}
+    >
+      <h2 className="text-center mb-4" style={{ color: "#004080" }}>
+        Resources for HR and People leaders
+      </h2>
+      <div className="container">
+        <div className="row justify-content-center">
+          {resources.map((resource, index) => (
+            <div key={index} className="col-md-3 d-flex align-items-stretch">
+              <div className="card shadow-sm p-3 mb-4 d-flex flex-column text-center">
+                <h5
+                  className="card-title mt-3 mb-3"
+                  style={{
+                    fontSize: "1.3rem",
+                    fontWeight: 600,
+                    color: "#00264d",
+                  }}
+                >
+                  {resource.title}
+                </h5>
+                <div className="position-relative d-flex justify-content-center">
+                  <img
+                    src={resource.imgSrc}
+                    className="card-img-top"
+                    alt={resource.title}
+                    style={{ height: "200px", objectFit: "cover" }}
+                  />
+                </div>
+                <div
+                  className="card-body d-flex flex-column flex-grow-1"
+                  style={{ fontSize: "14px", color: "#00264d" }}
+                >
+                  <p className="card-text flex-grow-1">
+                    {resource.description}
+                  </p>
+                  <a
+                    href="#"
+                    className="btn mt-auto"
+                    style={{ backgroundColor: "#00264d", color: "#ffffff" }}
+                  >
+                    {resource.buttonText}
+                  </a>
+                </div>
               </div>
             </div>
           ))}
         </div>
-        <button
-          className="position-absolute start-0 translate-middle-y btn btn-light"
-          style={{ top: "50%", color: "black" }}
-          onClick={prevSlide}
-        >
-          &#9664;
-        </button>
-        <button
-          className="position-absolute end-0 translate-middle-y btn btn-light"
-          style={{ top: "50%", color: "black" }}
-          onClick={nextSlide}
-        >
-          &#9654;
-        </button>
       </div>
     </div>
   );
 };
-
-export default TestimonialsSlider;
+export default Page4;
