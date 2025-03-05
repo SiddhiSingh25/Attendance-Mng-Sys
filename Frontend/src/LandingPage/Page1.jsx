@@ -7,7 +7,7 @@ function Page1() {
     <>
     <div className="container-fluid bg py-5 px-5 heropage" >
     <div class="row my-0">
-          <div className="col-sm-6 text-center my-5">
+          <div className="col-sm-6 text-center">
               <h2 className='heading'>Welcome to Our Attendance Management System</h2>
               <p className="subheading">Effortlessly track teacher and student attendance with our automated system. Save time, reduce errors, and enhance the academic experience.</p>
               

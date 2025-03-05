@@ -5,8 +5,10 @@
   font-style: normal;
 }
 
+/* page1 style */
+
 .heading{
-  padding-top: 20vh;
+  padding-top: 22vh;
   color: #0059bd;
   font-size:3.5rem ;
   font-weight: bolder;
@@ -25,7 +27,7 @@
 .bg{
   background-image: url('./isha_image/background.png');
   background-repeat: no-repeat;
-  height: 700px;
+  height: 1000px;
 }
 
 .heropage
@@ -37,7 +39,7 @@
 
 .photo
 {
-  padding-top: 5vh;
+  padding-top: 15vh;
   position: relative;
 }
 
@@ -46,7 +48,7 @@
 .bg1{
   background-color: #f3f9ff;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 30px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -57,7 +59,7 @@
 .bg2{
   background-color: #fef6ec;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 30px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -68,7 +70,7 @@
 .bg3{
   background-color: #fceeef;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 30px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -81,7 +83,7 @@
 {
   background-color: #ecf8f2;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 30px;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -128,11 +130,11 @@
 
 @media screen and  (max-width : 700px) {
   .page3background{
-    font-size:2rem;
+    font-size:1.8rem;
     padding: 2rem 3rem;
   }
   .heading{
-    padding-top: 5vh;
+    padding-top: 3vh;
     color: #0059bd;
     font-size:2.3rem ;
     font-weight: bolder;
@@ -148,9 +150,45 @@
   }
   .photo
 {
-  padding-top: 0vh;
-  padding-bottom: 5vh;
+  padding-top: 2vh;
+} 
+/* .bg1{
+ float: left;
+ height: 150px;
+ width: 80px;
 }
-  
-  
+.bg2{
+  float: left;
+  height: 100px;
+  width: 100px;
+ } */
+
+}
+
+@media (max-width : 500px) {
+  .bg1{
+  /* grid-template-columns: repeat(2,lfr); */
+  float: left;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+   }
+   .bg2{
+     /* grid-template-columns: repeat(2,lfr); */
+     float: left;
+     margin-top: 4vh;
+     margin-bottom: 4vh;
+   }
+   .bg3{
+    /* grid-template-columns: repeat(2,lfr); */
+    float: left;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+  .bg4{
+    /* grid-template-columns: repeat(2,lfr); */
+    float: left;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+
 }
