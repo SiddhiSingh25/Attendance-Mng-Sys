@@ -14,62 +14,24 @@ import {
 
 function Page2() {
   return (
+   
     <>
-      <div className="container-fluid pt-5 px-5">
-        <div className="row ">
-          z
-          <div className="col-sm-2 text-center bg1">
-            <div className="icon1">
-              <FontAwesomeIcon icon={faUsers} />
-            </div>
-            <div>Student Register</div>
-          </div>
-          <div className="col-sm-2 text-center bg2">
-            <div className="icon2">
-              <FontAwesomeIcon icon={faUser} />
-            </div>
-            <div>Teacher Register</div>
-          </div>
-          <div className="col-sm-2 text-center bg3">
-            <div className="icon3">
-              <FontAwesomeIcon icon={faSchool} />
-            </div>
-            <div>Student Login</div>
-          </div>
-          <div className="col-sm-2 text-center bg4">
-            <div className="icon4">
-              <FontAwesomeIcon icon={faUserTie} />
-            </div>
-            <div>Teacher Login</div>
-          </div>
+    <div className='row containerpage2'>
+    <div className='container-fulid'>
+        <div className='bg1'><div className='icon1'><FontAwesomeIcon icon={faUsers} /></div>Student Register </div>
+        <div className='bg2'><div className='icon2'><FontAwesomeIcon icon={faUser} /></div>Teacher Register</div>
+        <div className='bg3'><div className='icon3'><FontAwesomeIcon icon={faSchool} /></div>Student Login</div>
+        <div className='box bg4'><div className='icon4'><FontAwesomeIcon icon={faUserTie} /></div>Teacher Login</div>
         </div>
-        <div className="row ">
-          <div className="col-sm-2 text-center bg4">
-            <div className="icon4">
-              <FontAwesomeIcon icon={faCalendarDay} />
-            </div>
-            <div>Schedule</div>
-          </div>
-          <div className="col-sm-2 text-center bg3">
-            <div className="icon3">
-              <FontAwesomeIcon icon={faStar} />
-            </div>
-            <div>Review</div>
-          </div>
-          <div className="col-sm-2 text-center bg2">
-            <div className="icon2">
-              <FontAwesomeIcon icon={faLaptopCode} />
-            </div>
-            <div>About Developers</div>
-          </div>
-          <div className="col-sm-2 text-center bg1">
-            <div className="icon1">
-              <FontAwesomeIcon icon={faHandHoldingHand} />
-            </div>
-            <div>Help & Support</div>
-          </div>
         </div>
-      </div>
+        <div className='row containerpage2 pb-5'>
+        <div className='container-fulid'>
+        <div className='bg1'><div className='icon1'><FontAwesomeIcon icon={faCalendarDay} /></div>Schedule</div>
+        <div className='bg2'><div className='icon2'><FontAwesomeIcon icon={faStar} /></div>Review</div>
+        <div className='bg3'><div className='icon3'><FontAwesomeIcon icon={faLaptopCode} /></div>About Developers</div>
+        <div className='bg4'><div className='icon4'><FontAwesomeIcon icon={ faHandHoldingHand} /></div>Help & Support</div>
+    </div>
+    </div>
     </>
   );
 }
