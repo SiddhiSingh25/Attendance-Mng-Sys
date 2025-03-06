@@ -25,12 +25,11 @@ function TeacherLogin() {
                   <div className='col-sm-10'>
                   <input type="email"
                   placeholder="Email....."
-                  className="form-control rounded-5 mt-4"/>
+                  className="form-control rounded-5 mt-4 ps-4"/>
                 <input type="password"
                   placeholder="************"
-                  className="form-control rounded-5  mt-4"
-                            />
-                <input type="checkbox" className="check mt-3"/>Remember me
+                  className="form-control rounded-5  mt-4 ps-4"/>
+                <input type="checkbox" className="check mt-4"/>Remember me
                               
                   
                     <div className="text-centre mt-2 pt-2 ">
