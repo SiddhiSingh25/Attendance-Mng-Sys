@@ -5,27 +5,11 @@ function Footer() {
       <div className="Footer">
         <div className="footer-container">
           <div className="icon-sec">
-            <i
-              class="fa-brands fa-facebook"
-              style={{ color: "white", fontSize: "3rem" }}
-            ></i>
-            <i
-              class="fa-brands fa-instagram"
-              id="icon"
-              style={{ color: "white", fontSize: "3rem" }}
-            ></i>
-            <i
-              class="fa-brands fa-linkedin"
-              style={{ color: "white", fontSize: "3rem" }}
-            ></i>
-            <i
-              class="fa-brands fa-youtube"
-              style={{ color: "white", fontSize: "3rem" }}
-            ></i>
-            <i
-              class="fa-brands fa-google "
-              style={{ color: "white", fontSize: "3rem" }}
-            ></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram" id="icon"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-google "></i>
           </div>
           <div className="content-sec">
             <p>Home</p>
