@@ -8,7 +8,7 @@ import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 const Page4 = () => {
   const resources = [
     {
-      title: "Quick Attendance Management Features",
+      title: "Quick Attendance Management Features for College",
       description:
         "Pocket HRMS gives you & your employees the best experience through our attendance management system.",
       imgSrc:
@@ -38,14 +38,27 @@ const Page4 = () => {
       className="container-fluid py-5"
       style={{ backgroundColor: "#e3f2fd" }}
     >
-      <h2 className="text-center mb-4" style={{ color: "#004080" }}>
+      <h2
+        className="text-center mb-4"
+        style={{ color: "#004080", paddingBottom: "2rem" }}
+      >
         Resources for HR and People leaders
       </h2>
       <div className="container">
-        <div className="row justify-content-center">
+        <div
+          className="row justify-content-center "
+          style={{
+            gap: "2rem",
+            alignItems: "center",
+            margin: "0",
+          }}
+        >
           {resources.map((resource, index) => (
             <div key={index} className="col-md-3 d-flex align-items-stretch">
-              <div className="card shadow-sm p-3 mb-4 d-flex flex-column text-center">
+              <div
+                className="card shadow-sm p-3 mb-4 d-flex flex-column text-center"
+                style={{}}
+              >
                 <h5
                   className="card-title mt-3 mb-3"
                   style={{
