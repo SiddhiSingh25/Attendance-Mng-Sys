@@ -6,7 +6,10 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 function StudentRegister() {
   return (
     <>
-      <div className="container-fluid" style={{ paddingBottom: "2rem" }}>
+      <div
+        className="container-fluid"
+        style={{ paddingBottom: "2rem", paddingTop: "3rem" }}
+      >
         <div className="row">
           <div className="col-sm-2"></div>
           <div className="col-sm-8">

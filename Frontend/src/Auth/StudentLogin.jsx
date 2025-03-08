@@ -9,7 +9,7 @@ function StudentLogin() {
       <section>
         <div
           className="container-fluid stdlogincontainer "
-          style={{ paddingBottom: "3rem" }}
+          style={{ paddingBottom: "3rem", paddingTop: "3rem" }}
         >
           <div className="row">
             <div className="col-sm-2"></div>
