@@ -6,14 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
-<<<<<<< HEAD
-  return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container">
-        <Link className="navbar-brand" to="/">AMS</Link>
-=======
   const [isOpen, setIsOpen] = useState(false);
->>>>>>> d3f3a75b4aa421a127a48bf63e64570989a306ef
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);

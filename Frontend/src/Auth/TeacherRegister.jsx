@@ -2,9 +2,9 @@ import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 function TeacherRegister() {
-<<<<<<< HEAD
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,11 +15,6 @@ function TeacherRegister() {
   return (
     <>
       <div className="container-fluid py-5">
-=======
-  return (
-    <>
-      <div className="container-fluid py-5" style={{ paddingTop: "3rem" }}>
->>>>>>> d3f3a75b4aa421a127a48bf63e64570989a306ef
         <div className="row">
           <div className="col-sm-2"></div>
           <div className="col-sm-8">
@@ -68,15 +63,6 @@ function TeacherRegister() {
                   />
 
                   <input
-<<<<<<< HEAD
-=======
-                    type="password"
-                    placeholder="Confirm-Password"
-                    className="form-control rounded-5 mt-4 ps-4"
-                  />
-
-                  <input
->>>>>>> d3f3a75b4aa421a127a48bf63e64570989a306ef
                     type="file"
                     placeholder="upload you photo"
                     className="mt-3 ps-2"
