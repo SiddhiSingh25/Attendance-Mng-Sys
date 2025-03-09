@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <Link className="navbar-brand" to="/">MyApp</Link>
+        <Link className="navbar-brand" to="/">AMS</Link>
 
         {/* Navbar Toggler for Mobile */}
         <button

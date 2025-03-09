@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
 
-const userSchema = new mongoose.Schema({
+const teacherSchema = new mongoose.Schema({
     fullName: {
         firstName: {
             type: String,
@@ -22,19 +22,11 @@ const userSchema = new mongoose.Schema({
         unique: true,
         minlength: [5, "Email must be at least 5  character long"],
     },
-
-    semester: {
-        type: Number,
-        required: true,
-        enum: [1, 2, 3, 4, 5, 6],
-    },
-
     branch: {
         type: String,
         required: true,
-        enum: ["Information Technology", "Electronics", "PGDCA"],
+        enum : ["Non-technical branches", "Technical branches"],
     },
-
     number: {
         type: Number,
         required: true,
@@ -43,25 +35,25 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true,
-        select: false,
+        select : false
     },
 });
 
-userSchema.methods.genrateAuthToken = function () {
+teacherSchema.methods.authGenerateToken = function () {
     const token = jwt.sign({ _id: this._id }, process.env.JWT_SECRET, {
         expiresIn: "24h",
     });
     return token;
 };
 
-userSchema.methods.comparePass = async function (password) {
-    const compare = await bcrypt.compare(password, this.password);
-    return compare;
-};
-
-userSchema.statics.hashPassword = async function (password) {
+teacherSchema.statics.hashPassword = async function (password) {
     const hashPass = await bcrypt.hash(password, 10);
     return hashPass;
 };
 
-export const User = mongoose.model("User", userSchema);
+teacherSchema.methods.comparePass = async function (password) {
+    const compare = await bcrypt.compare(password, this.password);
+    return compare;
+};
+
+export const Teacher = mongoose.model("Teacher", teacherSchema);
