@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
@@ -49,6 +50,21 @@ function StudentRegister() {
     <>
       <div className="container-fluid">
         <form className="row" onSubmit={handleSubmit}>
+=======
+import Button from "react-bootstrap/Button";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+
+function StudentRegister() {
+  return (
+    <>
+      <div
+        className="container-fluid"
+        style={{ paddingBottom: "2rem", paddingTop: "3rem" }}
+      >
+        <div className="row">
+>>>>>>> d3f3a75b4aa421a127a48bf63e64570989a306ef
           <div className="col-sm-2"></div>
           <div className="col-sm-8">
             <div className="regcontainerstd px-3 py-4 ">
@@ -61,6 +77,7 @@ function StudentRegister() {
                 <div className="col-sm-10">
                   <input
                     type="text"
+<<<<<<< HEAD
                     placeholder="Enter you first name"
                     className="form-control rounded-5 mt-3 ps-4"
                     value={firstName}
@@ -79,10 +96,15 @@ function StudentRegister() {
                     className="form-control rounded-5 mt-3 ps-4"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+=======
+                    placeholder="Enter you name"
+                    className="form-control rounded-5 mt-3 ps-4"
+>>>>>>> d3f3a75b4aa421a127a48bf63e64570989a306ef
                   />
 
                   <input
                     type="text"
+<<<<<<< HEAD
                     placeholder="Semester"
                     className="form-control rounded-5 mt-3 ps-4"
                     value={semester}
@@ -95,20 +117,40 @@ function StudentRegister() {
                     className="form-control rounded-5 mt-3 ps-4"
                     value={branch}
                     onChange={(e) => setBranch(e.target.value)}
+=======
+                    placeholder="Year/Semester"
+                    className="form-control rounded-5 mt-3 ps-4"
+                  />
+
+                  <input
+                    type="email"
+                    placeholder="Email.."
+                    className="form-control rounded-5 mt-3 ps-4"
+                  />
+
+                  <input
+                    type="text"
+                    placeholder="Branch"
+                    className="form-control rounded-5 mt-3 ps-4"
+>>>>>>> d3f3a75b4aa421a127a48bf63e64570989a306ef
                   />
 
                   <input
                     type="number"
                     placeholder="Contact no."
                     className="form-control rounded-5 mt-3 ps-4"
+<<<<<<< HEAD
                     value={number}
                     onChange={(e) => setNumber(e.target.value)}
+=======
+>>>>>>> d3f3a75b4aa421a127a48bf63e64570989a306ef
                   />
 
                   <input
                     type="password"
                     placeholder="Password"
                     className="form-control rounded-5 mt-3 ps-4"
+<<<<<<< HEAD
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />
@@ -120,6 +162,24 @@ function StudentRegister() {
                   <div className="text-centre mt-2 pt-2 ">
                     <button type="submit" className="btn btn-outline-dark">
                       Student Register
+=======
+                  />
+
+                  <input
+                    type="password"
+                    placeholder="Confirm-Password"
+                    className="form-control rounded-5 mt-3 ps-4"
+                  />
+
+                  <input
+                    type="file"
+                    placeholder="upload you photo"
+                    className="mt-3 ps-2"
+                  />
+                  <div className="text-centre mt-2 pt-2 ">
+                    <button type="button" class="btn btn-outline-dark">
+                      Student Login
+>>>>>>> d3f3a75b4aa421a127a48bf63e64570989a306ef
                     </button>
                   </div>
                 </div>
@@ -129,7 +189,11 @@ function StudentRegister() {
 
             <div className="col-sm-2"></div>
           </div>
+<<<<<<< HEAD
         </form>
+=======
+        </div>
+>>>>>>> d3f3a75b4aa421a127a48bf63e64570989a306ef
       </div>
     </>
   );
