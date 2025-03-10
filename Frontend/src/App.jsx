@@ -8,6 +8,7 @@ import StudentRegister from "./Auth/StudentRegister";
 import StudentLogin from "./Auth/StudentLogin";
 import TeacherLogin from "./Auth/TeacherLogin";
 import StudentProfile from './Student/StudentProfile'
+import TeacherProfile from "./Teacher/TeacherProfile";
 function App() {
   return (
     <>
@@ -23,6 +24,7 @@ function App() {
           <Route path="/signup/teacher" element={<TeacherRegister/>} />
           <Route path="/signup/student" element={<StudentRegister/>} />
           <Route path="/studentdashboard" element={<StudentProfile/>} />
+          <Route path="/teacherdashboard" element={<TeacherProfile/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

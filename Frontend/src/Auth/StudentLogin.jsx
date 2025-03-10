@@ -12,11 +12,11 @@ function StudentLogin() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = { email, password };
+    const formData = { email, password };
     try {
       const response = await axios.post(
         "http://localhost:8000/users/login",
-        data,
+        formData,
         {
           headers: { "Content-Type": "application/json" },
         }

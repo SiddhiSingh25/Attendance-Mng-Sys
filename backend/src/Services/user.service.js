@@ -1,11 +1,11 @@
-import { Teacher } from "../Models/Teacher.model.js";
+import { User } from "../Models/User.model.js";
 
-
-export const createTeacher = async function ({
+export const createUser = async function ({
     fullName,
     email,
     password: hashPassword,
     branch,
+    semester,
     number,
 }) {
     if (
@@ -13,12 +13,13 @@ export const createTeacher = async function ({
         !hashPassword ||
         !email ||
         !branch ||
+        !semester ||
         !number
     ) {
         throw new Error("All fields are required");
     }
 
-    const teacher = Teacher.create({
+    const user = User.create({
         fullName: {
             firstName: fullName.firstName,
             lastName: fullName.lastName,
@@ -26,7 +27,8 @@ export const createTeacher = async function ({
         email,
         password: hashPassword,
         branch,
+        semester,
         number,
     });
-    return teacher;
+    return user;
 };

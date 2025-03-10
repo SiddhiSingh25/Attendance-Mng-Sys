@@ -25,7 +25,7 @@ const teacherRegister = async (req, res) => {
         number,
     });
 
-    const token = teacher.authGenerateToken();
+    const token = teacher.genrateAuthToken();
 
     res.status(201).json({
         token,

@@ -39,7 +39,7 @@ const teacherSchema = new mongoose.Schema({
     },
 });
 
-teacherSchema.methods.authGenerateToken = function () {
+teacherSchema.methods.genrateAuthToken = function () {
     const token = jwt.sign({ _id: this._id }, process.env.JWT_SECRET, {
         expiresIn: "24h",
     });

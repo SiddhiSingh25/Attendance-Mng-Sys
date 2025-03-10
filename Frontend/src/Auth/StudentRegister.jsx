@@ -17,7 +17,7 @@ function StudentRegister() {
   const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = {
+    const formData = {
       fullName: {
         firstName: firstName,
         lastName: lastName,
@@ -31,7 +31,10 @@ function StudentRegister() {
     try {
       const response = await axios.post(
         "http://localhost:8000/users/register",
-        data
+        formData,
+        {
+          headers: { 'Content-Type': 'application/json' }
+        }
       );
       console.log("Response:", response.data);
       alert("Registration successful!");

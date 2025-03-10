@@ -29,7 +29,7 @@ router
                 .withMessage("Password must be at least 4 character long"),
             body("number")
                 .isLength({ min: 10 })
-                .withMessage("Password must be at least 4 character long"),
+                .withMessage("Number must be 10 character long"),
         ],
         userRegister
     );
