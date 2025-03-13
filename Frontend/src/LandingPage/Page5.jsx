@@ -97,7 +97,17 @@ const TestimonialsSlider = () => {
   return (
     <div className="container py-5" style={{ maxWidth: "1300px" }}>
       <h2 className="text-center mb-3">What Our Clients Say</h2>
-      <p className="text-center mb-4 text-muted">
+      <p
+        className="p3"
+        id="p3"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: "1.5rem",
+          color: "#888",
+        }}
+      >
         We Are Glad To Be A Reason For The Smiles We Put On Our Client’s Faces.
       </p>
       <div
