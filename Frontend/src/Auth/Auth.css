@@ -1,13 +1,122 @@
 /* studentlogin */
-container-fluid{
-    background-color: #bde4f7;
+
+.text-centre {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 50px;
+  text-align: center;
 }
-.text-centre{
-    font-family: "Poppins", sans-serif;
-    color: white;
-    font-size: 100vh;
+.icon {
+  font-size: 130px;
+  text-align: center;
+  filter: drop-shadow(2px 2px 5px #1111116b);
 }
-.icon{
-    color: white;
-    
+.button:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3) !important;
+}
+.input {
+  border-radius: 35px;
+  color: #bde4f7;
+  height: 80px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+/* student login */
+.subcontainerstd {
+  background: linear-gradient(50deg, #fff4e2, #bde4f7);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.formstdheading {
+  font-size: 34px;
+  color: #388cec;
+  text-align: center;
+  font-family: "poppins" sans-serif;
+  text-shadow: -1px 1px 2px #1111116b;
+}
+.form-control {
+  height: 60px;
+  /* margin-top: 200px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px; */
+  border: 1px solid black;
+  width: 40px;
+}
+.check {
+  color: #0059bd;
+  margin-left: 15px;
+}
+.stdlogincontainer {
+  /* height: 100vh; */
+  width: 100vw;
+  margin-top: 5vh;
+}
+@media (max-width: 576px) {
+  .formstdheading {
+    font-size: 2rem !important;
+  }
+  .form-control {
+    height: 3rem !important;
+    width: 95% !important;
+  }
+  .icon {
+    font-size: 6rem !important;
+  }
+  .checkbox {
+    font-size: 1.5rem !important;
+  }
+  .button {
+    font-size: 1.5rem !important;
+    height: 3rem !important;
+    width: 5rem !important;
+  }
+}
+
+/* Registration css */
+.regcontainerstd {
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  /* background: linear-gradient(50deg , #fff4e2 ,#edaeb3); */
+  background-color: #fceeef;
+  margin-top: 5vh;
+}
+.regicon {
+  font-size: 100px;
+  text-align: center;
+  color: #f2969d;
+  filter: drop-shadow(2px 2px 5px #1111116b);
+}
+.regstdheading {
+  font-size: 34px;
+  color: #388cec;
+  text-align: center;
+  font-family: "poppins" sans-serif;
+  color: #f2969d;
+  text-shadow: -1px 1px 2px #1111116b;
+}
+.btnreg {
+  background-color: #edaeb3;
+  border: none;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #888; /* Very Light Black */
+  opacity: 1; /* Ensure full visibility */
+}
+
+@media (max-width: 576px) {
+  .regstdheading {
+    font-size: 2rem;
+    padding-bottom: 0rem !important;
+  }
+  .col-sm-10 {
+    gap: 0rem !important;
+  }
+  .form-control {
+    padding-bottom: 0rem !important;
+  }
 }

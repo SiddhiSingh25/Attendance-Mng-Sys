@@ -6,7 +6,10 @@ import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 function Page3() {
   return (
     <>
-      <div className="page3background">
+      <div
+        className="container-fluid page3background"
+        style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic" }}
+      >
         <p>
           <FontAwesomeIcon icon={faQuoteLeft} />
         </p>

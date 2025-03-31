@@ -1,5 +1,6 @@
 import LandingPage from './LandingPage/LandingPage';
-import Auth from './Auth/Auth';
+// import Auth from './Auth/Auth';
+import Student from './Student/Student';
 
 
 function App() {
@@ -7,8 +8,8 @@ function App() {
   return (
     <>
   <LandingPage/>
-  <Auth/>
-  
+  {/* <Auth/> */}
+  <Student/>
     </>
   )
 }

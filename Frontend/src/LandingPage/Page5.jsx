@@ -60,41 +60,85 @@ const testimonials = [
 
 const TestimonialsSlider = () => {
   const [index, setIndex] = useState(0);
+  const [visibleCards, setVisibleCards] = useState(3);
+
+  // Responsive adjustments
+  React.useEffect(() => {
+    const updateVisibleCards = () => {
+      if (window.innerWidth <= 768) {
+        setVisibleCards(1);
+      } else if (window.innerWidth <= 992) {
+        setVisibleCards(2);
+      } else {
+        setVisibleCards(3);
+      }
+    };
+
+    updateVisibleCards();
+    window.addEventListener("resize", updateVisibleCards);
+    return () => window.removeEventListener("resize", updateVisibleCards);
+  }, []);
 
   const nextSlide = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    setIndex(
+      (prevIndex) =>
+        (prevIndex + 1) % (testimonials.length - (visibleCards - 1))
+    );
   };
 
   const prevSlide = () => {
     setIndex(
-      (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
+      (prevIndex) =>
+        (prevIndex - 1 + (testimonials.length - (visibleCards - 1))) %
+        (testimonials.length - (visibleCards - 1))
     );
   };
 
   return (
-    <div className="container py-5">
+    <div className="container py-5" style={{ maxWidth: "1300px" }}>
       <h2 className="text-center mb-3">What Our Clients Say</h2>
-      <p className="text-center mb-4 text-muted">
+      <p
+        className="p3"
+        id="p3"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: "1.5rem",
+          color: "#888",
+        }}
+      >
         We Are Glad To Be A Reason For The Smiles We Put On Our Client’s Faces.
       </p>
-      <div className="d-flex justify-content-center overflow-hidden position-relative">
+      <div
+        className="d-flex justify-content-center overflow-hidden position-relative"
+        style={{ maxWidth: "100%" }}
+      >
         <div
           className="d-flex"
           style={{
             transition: "transform 0.5s ease",
-            transform: `translateX(-${index * 40}%)`,
-            width: `${testimonials.length * 40}%`,
+            transform: `translateX(-${index * (100 / visibleCards)}%)`,
+            width: `${(testimonials.length / visibleCards) * 100}%`,
+            gap: "1.5rem",
           }}
         >
-          {testimonials.concat(testimonials[0]).map((testimonial, i) => (
+          {testimonials.map((testimonial, i) => (
             <div
               key={i}
               className="p-3"
-              style={{ minWidth: "40%", flex: "0 0 40%" }}
+              style={{
+                minWidth: `${100 / visibleCards}%`,
+                flex: `0 0 ${100 / visibleCards}%`,
+              }}
             >
               <div
-                className="card p-4 d-flex flex-column align-items-center text-center"
-                style={{ backgroundColor: testimonial.bgColor, height: "100%" }}
+                className="card p-3 d-flex flex-column align-items-center text-center"
+                style={{
+                  backgroundColor: testimonial.bgColor,
+                  height: "100%",
+                  display: "flex",
+                }}
               >
                 <img
                   src={testimonial.imgSrc}
@@ -114,14 +158,14 @@ const TestimonialsSlider = () => {
         </div>
         <button
           className="position-absolute start-0 translate-middle-y btn btn-light"
-          style={{ top: "50%", color: "black" }}
+          style={{ top: "50%", color: "black", zIndex: 10, left: "10px" }}
           onClick={prevSlide}
         >
           &#9664;
         </button>
         <button
           className="position-absolute end-0 translate-middle-y btn btn-light"
-          style={{ top: "50%", color: "black" }}
+          style={{ top: "50%", color: "black", zIndex: 10, right: "10px" }}
           onClick={nextSlide}
         >
           &#9654;
