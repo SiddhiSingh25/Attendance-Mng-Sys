@@ -1,6 +1,6 @@
 import { validationResult } from "express-validator";
 import { User } from "../Models/User.model.js";
-import { createUser } from "../Services/user.service.js";
+import { createUser } from "../../Services/user.service.js";
 import { BlackListToken } from "../Models/blacklistToken.model.js";
 
 const userRegister = async (req, res, next) => {
@@ -8,16 +8,11 @@ const userRegister = async (req, res, next) => {
     if (!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array() });
     }
-    const { fullName, email, password, branch, semester, number } = req.body;
-
-    const existingUser = await User.findOne({ email });
-    if (existingUser) {
-      return res.status(400).json({ message: "Email already exists" });
-    }
+    const { fullName, email, password } = req.body;
 
     const hashPassword = await User.hashPassword(password);
 
-    const user = await createUser({ fullName, email, password: hashPassword, branch, semester, number });
+    const user = await createUser({ fullName, email, password: hashPassword });
 
     const token = user.genrateAuthToken();
 
@@ -27,7 +22,7 @@ const userRegister = async (req, res, next) => {
     });
 };
 
-const userLogin = async (req, res) => {
+const login = async (req, res) => {
     const errors = validationResult(req);
 
     if (!errors.isEmpty) {
@@ -39,15 +34,15 @@ const userLogin = async (req, res) => {
     const user = await User.findOne({ email }).select("+password");
 
     if (!user) {
-        return res.status(401).json({ message: "Incorrect email or password!" });
+        return res.status(401).json({ message: "Invalid email " });
     }
 
     const isMatch = await user.comparePass(password);
     if (!isMatch) {
-        return res.status(401).json({ message: "Incorrect email or password!" });
+        return res.status(401).json({ message: "Invalid  password" });
     }
 
-    const token = user.genrateAuthToken();
+    const token = await user.genrateAuthToken();
 
     res.cookie("token", token);
     return res.status(200).json({ token, user });
@@ -77,4 +72,4 @@ const logout = async (req, res, next) => {
     }
 };
 
-export { userRegister, userLogin, profile, logout };
+export { userRegister, login, profile, logout };

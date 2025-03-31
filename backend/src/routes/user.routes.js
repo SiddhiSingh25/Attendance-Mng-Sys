@@ -1,12 +1,12 @@
 import express from "express";
 import {
     userRegister,
-    userLogin,
+    login,
     profile,
     logout,
 } from "../controllers/user.controller.js";
 import { body } from "express-validator";
-import { authUser } from "../middlewares/authUser.middleware.js";
+import { authUser } from "../middlewares/auth.middleware.js";
 
 const router = express.Router();
 
@@ -21,15 +21,6 @@ router
             body("password")
                 .isLength({ min: 4 })
                 .withMessage("Password must be at least 4 character long"),
-            body("semester")
-            .isLength({ min: 1 })
-            .withMessage("Semester cannot be empty"),
-            body("branch")
-                .isLength({ min: 4 })
-                .withMessage("Password must be at least 4 character long"),
-            body("number")
-                .isLength({ min: 10 })
-                .withMessage("Number must be 10 character long"),
         ],
         userRegister
     );
@@ -42,7 +33,7 @@ router
                 .isLength({ min: 4 })
                 .withMessage("Password must be at least 4 character long"),
         ],
-        userLogin
+        login
     );
 
 router.get("/profile", authUser, profile);

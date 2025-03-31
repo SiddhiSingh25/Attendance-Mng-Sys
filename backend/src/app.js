@@ -10,8 +10,6 @@ app.use(cookieParser())
 
 //routes
 import UserRoute from "./routes/user.routes.js";
-import TeacherRoute from './routes/teacher.routes.js'
 
 app.use("/users", UserRoute);
-app.use("/teachers", TeacherRoute)
 

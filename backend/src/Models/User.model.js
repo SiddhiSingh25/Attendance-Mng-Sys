@@ -23,27 +23,14 @@ const userSchema = new mongoose.Schema({
         minlength: [5, "Email must be at least 5  character long"],
     },
 
-    semester: {
-        type: Number,
-        required: true,
-        enum: [1, 2, 3, 4, 5, 6],
-    },
-
-    branch: {
-        type: String,
-        required: true,
-        enum: ["Information Technology", "Electronics", "PGDCA"],
-    },
-
-    number: {
-        type: Number,
-        required: true,
-        minlength: [10, "Mobile no must be at least 10 character long"],
-    },
     password: {
         type: String,
         required: true,
         select: false,
+    },
+
+    socketId: {
+        type: String,
     },
 });
 
