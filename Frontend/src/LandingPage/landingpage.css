@@ -43,7 +43,7 @@
   justify-content: center;
   height: max-content;
   padding-top: 3rem;
-  width: 100vw;
+  width: 100%;
 }
 
 .container-fulid {
@@ -91,6 +91,7 @@
 }
 #bg-1 {
   background-color: #f3f9ff !important;
+
 }
 .bg1 {
   background-color: #f3f9ff;

@@ -8,7 +8,16 @@ function Page3() {
     <>
       <div
         className="container-fluid page3background"
-        style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic" }}
+        // style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic" }}
+        style={{
+          fontFamily: "'Playfair Display', serif",
+          fontStyle: "italic",
+          backgroundImage: "url('/photospage123/background.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          // height: "100vh", // Full viewport height
+          color: "white" // Ensures text is readable on the background
+        }}
       >
         <p>
           <FontAwesomeIcon icon={faQuoteLeft} />

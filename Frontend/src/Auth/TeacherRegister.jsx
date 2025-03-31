@@ -47,7 +47,7 @@ function TeacherRegister() {
   return (
     <>
       <div className="container-fluid py-5">
-        <div className="row">
+        <div className="row pt-5">
           <div className="col-sm-2"></div>
           <div className="col-sm-8">
             <div className="regcontainerstd px-3 py-4 mt-0">
@@ -61,7 +61,7 @@ function TeacherRegister() {
                   <input
                     type="text"
                     placeholder="Enter you first name"
-                    className="form-control rounded-5 mt-4 ps-4"
+                    className="form-control rounded-5 mt-3 ps-4"
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
                   />
@@ -69,7 +69,7 @@ function TeacherRegister() {
                   <input
                     type="text"
                     placeholder="Enter you last name"
-                    className="form-control rounded-5 mt-4 ps-4"
+                    className="form-control rounded-5 mt-3 ps-4"
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
                   />
@@ -77,14 +77,14 @@ function TeacherRegister() {
                   <input
                     type="email"
                     placeholder="Email.."
-                    className="form-control rounded-5 mt-4 ps-4"
+                    className="form-control rounded-5 mt-3 ps-4"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                   />
 
                   <select
                     name="branches"
-                    className="form-control rounded-5 mt-4 ps-4"
+                    className="form-control rounded-5 mt-3 ps-4"
                     value={branch}
                     onChange={(e) => setBranch(e.target.value)}
                   >
@@ -99,7 +99,7 @@ function TeacherRegister() {
                   <input
                     type="number"
                     placeholder="Contact no."
-                    className="form-control rounded-5 mt-4 ps-4"
+                    className="form-control rounded-5 mt-3 ps-4"
                     value={number}
                     onChange={(e) => setNumber(e.target.value)}
                   />
@@ -107,7 +107,7 @@ function TeacherRegister() {
                   <input
                     type="password"
                     placeholder="Password"
-                    className="form-control rounded-5 mt-4 ps-4"
+                    className="form-control rounded-5 mt-3 ps-4"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                   />

@@ -43,13 +43,43 @@ function AttendanceDashboard() {
     // Define student profiles as objects
     const [students, setStudents] = useState([
         { name: "Zara Khan", photo: "AttendDashboardimg/zara.png", status: null },
+        { name: "Kunal ", photo: "AttendDashboardimg/kunal.jpg", status: null },
         { name: "Abhishek Yadav", photo: "AttendDashboardimg/abhishek.png", status: null },
-        { name: "Priya Singh", photo: "AttendDashboardimg/priya.jpg", status: null },
+        // { name: "Priya Singh", photo: "AttendDashboardimg/priya.jpg", status: null },
         { name: "Kunal Verma", photo: "AttendDashboardimg/kunal.jpg", status: null },
-        { name: "Arjun Mehta", photo: "AttendDashboardimg/arjun.jpg", status: null },
+       
+        // { name: "Arjun Mehta", photo: "AttendDashboardimg/arjun.jpg", status: null },
         { name: "Bhavna Patel", photo: "AttendDashboardimg/bhavna.jpg", status: null },
-        { name: "Rohit Sharma", photo: "AttendDashboardimg/rohit.jpg", status: null }
+        { name: "Rohit Sharma", photo: "AttendDashboardimg/rohit.jpg", status: null },
+        { name: "Pihu", photo:"AttendDashboardimg/bhavna.jpg", status: null },
+   
     ]);
+
+    // Dropdown options stored as an object
+    const options = {
+        branches: ["Select Branch", "Information Technology", "Electronics", "PGDCA"],
+        semester: ["Select Semester", "First Semester", "Second Semester", "Third Semester","Forth Semester","Fifth Semester","Sixth Semester"],
+        subjects: [
+            "Select Subject",
+            "Applied Mathematics I",
+            "Applied Mathematics II",
+            "Applied Mathematics III",
+            "Applied Physics I",
+            "Applied Physics II",
+            "Applied Chemistry",
+            "Big Data",
+            "Cloud Computing",
+            "C Programming",
+            "Data Structure Using C",
+            "Object Oriented Programming Using JAVA",
+            "Python",
+            "Android",
+            "C++",
+        ],
+    };
+
+
+
 
     // Sort students alphabetically when the component mounts
     useEffect(() => {
@@ -75,37 +105,27 @@ function AttendanceDashboard() {
         </div>
         <div className='row'>
             <div className='col-sm-3'>
-                <select>
-                    <option>Select Branch</option>
-                    <option>Information Technology</option>
-                    <option>Electronics</option>
-                    <option>PGDCA</option>
+                <select className='selectstd'>
+                {options.branches.map((branch, index) => (
+                            <option key={index}>{branch}</option>
+                        ))}
+
                 </select>
             </div>
             <div className='col-sm-3'>
-                <select >
-                    <option>Select Year</option>
-                    <option>First Year</option>
-                    <option>Second Year</option>
-                    <option>Third Year</option>
+                <select className='selectstd'>
+                {options.semester.map((semester, index) => (
+                            <option key={index}>{semester}</option>
+                        ))}
+
                 </select>
             </div>
             <div className='col-sm-3'>
-                <select >
-                    <option>Select Subject</option>
-                    <option>Applid Mathematics I</option>
-                    <option>Applid Mathematics II</option>
-                    <option>Applid Mathematics III</option>
-                    <option>Applid Physics I</option>
-                    <option>Applid Physics II</option>
-                    <option>Applid Chemistry</option>
-                    <option>Big Data</option>
-                    <option>Cloud Computing</option>
-                    <option>C Programming</option>
-                    <option>Data Structur Using C</option>
-                    <option>Object Orianted Programming Using JAVA</option>
-                    <option>Python</option>
-                    <option>Android</option>
+                <select  className='selectstd'>
+                {options.subjects.map((subject, index) => (
+                            <option key={index}>{subject}</option>
+                        ))}
+
                 </select>
             </div>
             <div className='col-sm-3'>
@@ -115,6 +135,7 @@ function AttendanceDashboard() {
             <div className='subcontainer'>
                 {students.reduce((acc, student, index) => {
                     const currentInitial = student.name[0].toUpperCase();
+                    console.log(currentInitial)
                     const prevInitial = index > 0 ? students[index - 1].name[0].toUpperCase() : null;
 
                     if (currentInitial !== prevInitial) {

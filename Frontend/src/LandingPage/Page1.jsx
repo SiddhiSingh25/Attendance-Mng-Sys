@@ -3,9 +3,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Page1() {
 
+  const backgroundStyle = {
+    backgroundImage: `url('/photospage123/background.png')`, // Update the path based on your file structure
+    backgroundSize: 'cover', // Adjust this to fit the image as desired
+    backgroundPosition: 'center',
+    height: '100vh', // Full viewport height
+    width: '100%',   // Full width
+  };
+
   return (
     <>
-    <div className="container-fluid bg py-5 px-5 heropage" >
+    <div className="container-fluid bg py-5 px-5 heropage" style={backgroundStyle} >
         <div class="row my-0">
               <div className="col-sm-6 text-center">
                   <h2 className='heading'>Welcome to Our Attendance Management System</h2>

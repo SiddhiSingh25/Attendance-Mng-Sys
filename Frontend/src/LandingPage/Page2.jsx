@@ -52,13 +52,13 @@ function Page2() {
           <div className="container-fulid">
             <div className="sec-3">
               <div className="bg1" id="bg-4">
-                <div className="icon1">
+                <div className="icon4">
                   <FontAwesomeIcon icon={faCalendarDay} />
                 </div>
                 Schedule
               </div>
               <div className="bg2" id="bg-3">
-                <div className="icon2">
+                <div className="icon3">
                   <FontAwesomeIcon icon={faStar} />
                 </div>
                 Review
@@ -66,13 +66,13 @@ function Page2() {
             </div>
             <div className="sec-4">
               <div className="bg3" id="bg-2">
-                <div className="icon3">
+                <div className="icon2">
                   <FontAwesomeIcon icon={faLaptopCode} />
                 </div>
                 About Developers
               </div>
               <div className="bg4" id="bg-1">
-                <div className="icon4">
+                <div className="icon1">
                   <FontAwesomeIcon icon={faHandHoldingHand} />
                 </div>
                 Help & Support
