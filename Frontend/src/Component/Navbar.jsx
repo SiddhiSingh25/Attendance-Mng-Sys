@@ -94,6 +94,7 @@ function Navbar() {
               className="btn btn-primary dropdown-toggle"
               type="button"
               data-bs-toggle="dropdown"
+              style={{ backgroundColor: "#0059bd" }}
             >
               Sign Up
             </button>

@@ -24,7 +24,7 @@ function TeacherLogin() {
                   <div className="col-sm-10">
                     <input
                       type="email"
-                      placeholder="Email....."
+                      placeholder="Enter your Email-ID"
                       className="form-control rounded-5 mt-4 ps-4"
                     />
                     <input
