@@ -183,12 +183,12 @@ import React from "react";
 
 const Timetable = () => {
   return (
-    <div className="p-4 bg-warning">
+    <div className="p-4 timetable-container ">
       <h2 className="text-xl font-bold mb-4 text-center">GGP, Ballia - Time Table (Even Sem 2024-25)</h2>
-      <div className="overflow-x-auto bg-primary">
+      <div className="overflow-x-auto row1-time">
         <table className="table-auto border-collapse border border-gray-500 w-full">
           <thead>
-            <tr className="bg-gray-200 bg-secondary">
+            <tr className="bg-gray-200 col1-days">
               <th className="border border-gray-500 px-4 py-2">Day</th>
               <th className="border border-gray-500 px-4 py-2">Branch</th>
               <th className="border border-gray-500 px-4 py-2">10:00 AM - 10:50 AM | 10:50 AM - 11:40 AM</th>
@@ -203,7 +203,7 @@ const Timetable = () => {
           </thead>
           <tbody>
           <tr>
-               <td className="border border-gray-500 px-4 py-2" rowSpan="6">MONDAY</td>
+               <td className="border border-gray-500 px-4 py-2 days tablehover" rowSpan="6">MONDAY</td>
               <td className="border border-gray-500 px-4 py-2">EX-2</td>
               <td className="border border-gray-500 px-4 py-2">CS-II (TH) RH </td>
                <td className="border border-gray-500 px-4 py-2">NFTL(TH) IP</td>
@@ -252,7 +252,7 @@ const Timetable = () => {
             </tr>
 
             <tr>
-              <td className="border border-gray-500 px-4 py-2" rowSpan="6"> TUESDAY</td>
+              <td className="border border-gray-500 px-4 py-2 days" rowSpan="6"> TUESDAY</td>
               <td className="border border-gray-500 px-4 py-2">EX-2</td>
               <td className="border border-gray-500 px-4 py-2">IET(TH) NM</td>
                <td className="border border-gray-500 px-4 py-2">EIM(Lab) AK</td>
@@ -296,7 +296,7 @@ const Timetable = () => {
             </tr>
 
             <tr>
-              <td className="border border-gray-500 px-4 py-2" rowSpan="6">WEDNESDAY</td>
+              <td className="border border-gray-500 px-4 py-2 days" rowSpan="6">WEDNESDAY</td>
               <td className="border border-gray-500 px-4 py-2">EX-2</td>
               <td className="border border-gray-500 px-4 py-2">CS-II (Lab) RH</td>
                <td className="border border-gray-500 px-4 py-2">SCA (Principal sir)</td>
@@ -337,7 +337,7 @@ const Timetable = () => {
             </tr>
 
             <tr>
-              <td className="border border-gray-500 px-4 py-2" rowSpan="6">Thursday</td>
+              <td className="border border-gray-500 px-4 py-2 days" rowSpan="6">Thursday</td>
               <td className="border border-gray-500 px-4 py-2">EX-2</td>
               <td className="border border-gray-500 px-4 py-2">PCE (TH) AK</td>
                <td className="border border-gray-500 px-4 py-2">CS-II (TH) RH</td>
@@ -387,7 +387,7 @@ const Timetable = () => {
             </tr>
 
             <tr>
-              <td className="border border-gray-500 px-4 py-2" rowSpan="6">Friday</td>
+              <td className="border border-gray-500 px-4 py-2 days" rowSpan="6">Friday</td>
               <td className="border border-gray-500 px-4 py-2">EX-2</td>
               <td className="border border-gray-500 px-4 py-2">IET(TH) NM</td>
                <td className="border border-gray-500 px-4 py-2">EIM(Lab) AK</td>
@@ -428,7 +428,7 @@ const Timetable = () => {
             </tr>
 
             <tr>
-              <td className="border border-gray-500 px-4 py-2" rowSpan="6">Saturday</td>
+              <td className="border border-gray-500 px-4 py-2 days" rowSpan="6">Saturday</td>
               <td className="border border-gray-500 px-4 py-2">EX-2</td>
               <td className="border border-gray-500 px-4 py-2">CS-II (Lab) RH</td>
                <td className="border border-gray-500 px-4 py-2">SCA (Principal sir)</td>

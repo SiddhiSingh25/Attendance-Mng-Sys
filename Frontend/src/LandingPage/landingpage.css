@@ -128,7 +128,6 @@
 }
 #bg-1 {
   background-color: #f3f9ff !important;
-
 }
 .bg1 {
   background-color: #f3f9ff;
@@ -266,7 +265,6 @@
   .bg1 {
     height: 15vh;
     width: 20vh;
-
     padding-top: 2vh;
     font-size: 2vh;
   }
@@ -465,4 +463,145 @@ i:hover {
     padding-right: 1rem;
   }
 }
+
 /* General Styling */
+
+/* TimeTable */
+.timetable-container {
+  background-color: #7f97eff4;
+  color: White;
+}
+.row1-time {
+  background-color: #d5ddf3;
+  color: #6b89f8;
+}
+.col1-days,
+.days {
+  background-color: #7f97efaa;
+  color: white;
+  font-weight: bold;
+}
+/* .tablehover:hover
+{
+  border: .1rem solid #7f97ef !important;
+} */
+
+/* Feedback Page */
+.container-feed {
+  background-color: #edf3fa;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.subcontainer-feed {
+  background-color: white;
+  border-radius: 2rem;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+.feed {
+  border-bottom: 0.2rem solid #f4f4f4;
+}
+.emoji {
+  height: 7.5vh;
+  width: 7.5vh;
+  /* background-color: #dbeafe; */
+  border-radius: 5vh;
+  text-align: center;
+  /* padding-top: 2vh; */
+  border: 0.2rem solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #6fb5e4bf;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s;
+  float: left;
+  margin-left: 12vh;
+}
+.emoji:hover {
+  color: #ffd153;
+  background-color: #6b4921;
+  font-size: 4.5rem;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  height: 8.5vh;
+  width: 8.5vh;
+}
+.inputbox {
+  height: 6vh;
+  width: 80vh !important;
+  background-color: #edf3fa;
+  border-radius: 1.5vh;
+  border: 0.1rem solid #6fb5e4bf;
+  margin-top: 1.5vh !important;
+  margin-bottom: 1vh;
+  padding-top: 0vh;
+  color: #6fb5e4bf;
+  resize: none;
+  margin-left: 8vh !important;
+  margin-right: 5vh;
+  transition: all 0.5s;
+}
+::placeholder {
+  color: #6fb5e4bf !important;
+  font-weight: 500 !important;
+}
+.inputhover:hover {
+  background-color: white;
+  transition: all 0.5s;
+}
+.buttonfeed {
+  background-color: #56ade8bf;
+  color: white;
+  transition: all 0.5s;
+}
+.buttonfeed:hover {
+  background-color: #2f9fea;
+  color: white;
+  transition: all 0.5s;
+}
+
+@media (max-width: 700px) {
+  .inputbox {
+    margin-top: -0.5vh !important;
+    margin-left: 0.5vh !important;
+  }
+  .emoji {
+    font-size: 3.2rem;
+    margin-left: 1.2vh;
+    margin-top: -3vh;
+    margin-bottom: -3vh;
+  }
+  .mlemoji {
+    margin-left: -1vh;
+  }
+  .subcontainer-feed {
+    padding-left: 2vh;
+    padding-right: 0vh;
+    border-radius: 1.5vh;
+    overflow-x: hidden;
+  }
+  .emoji:hover {
+    font-size: 3.5rem;
+    height: 8.5vh;
+    width: 8.5vh;
+  }
+  .uploadpro {
+    font-size: 0.9rem;
+    height: 9vh;
+    width: 100% !important;
+    background-color: #edf3fa;
+    border-radius: 1.5vh;
+    border: 0.1rem solid #6fb5e4bf;
+    margin-top: 0vh !important;
+    margin-bottom: 1vh;
+    color: #6fb5e4bf;
+    resize: none;
+    margin-left: 0.5vh !important;
+    margin-right: 5vh;
+    transition: all 0.5s;
+  }
+}
