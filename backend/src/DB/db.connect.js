@@ -10,6 +10,6 @@ export const db_connect  = async()=>{
             console.log("Database connected Failed")
         }
     } catch (error) {
-        console.log.error(error)
+        console.error(error)
     }
 }

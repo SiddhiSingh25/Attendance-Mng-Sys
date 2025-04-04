@@ -28,7 +28,7 @@
 .teacher_name
 {
     color: #477b9d;
-    font-size: 3vh;
+    font-size: 1.5rem;
     font-weight: bolder;
     font-family:'Montserrat', sans-serif;
     border-bottom: .3vh solid #477b9d;
@@ -39,7 +39,7 @@
 .lechturer
 {
     color: #477b9d;
-    font-size: 2.5vh;
+    font-size: 1.2rem;
     font-weight: bolder;
     font-family:'Montserrat', sans-serif;
 }
@@ -192,26 +192,28 @@
 @media (max-width: 768px) {
       .subject{
         padding-bottom: 1.5rem;
-        height: 8vh;
-        width: 20vh;
+        height: 8.6vh;
+        width: 20.5vh;
         font-size: 1rem;
       }
       .selectbranch {
-        height: 8vh;
-        width: 20vh;
+        height: 8.6vh;
+        width: 20.5vh;
         font-size: 1rem;
       }
       .selectsemester{
-        height: 8vh;
-        width: 20vh;
+        height: 8.6vh;
+        width: 20.5vh;
         font-size: 1rem;
       }
       .buttonTeacherPro{
         display: flex;
         gap: 1.5rem;
-        height: 8vh;
-        width: 20vh;
+        height: 8.6vh;
+        width: 20.5vh;
         font-size: 1rem;
+        padding-top: 5px !important;
+        padding-left: 11.5px !important;
       }
       .sub1{
         display: flex;
@@ -219,7 +221,7 @@
         text-align: center;
         margin-right: 1.5rem;
         padding-top: 1.2rem;
-        padding-left: 3rem;
+        padding-left: 2.5rem;
         margin-top: -4vh;
     }
     
@@ -235,7 +237,7 @@
         display: flex;
         gap: 1.5rem;
         padding-bottom: 1.5rem;
-        margin-left: 0.5vh;
+        margin-left: -1px;
         text-align: center;
         padding-top: 1.2rem;
       }
@@ -253,15 +255,15 @@
       }
       .buttonTeacherPro:hover,  .selectbranch:hover, .selectsemester:hover
         {
-            height: 8vh;
-            width: 20vh;
+            height: 8.6vh;
+            width: 20.5vh;
             font-size: 1rem;
             padding-top: 1.2rem;
         }
         .subject:hover
           {
-            height: 8vh;
-            width: 20vh;
+            height: 8.6vh;
+            width: 20.5vh;
             font-size: 1rem;
             padding-top: 1.2rem;
             text-align: center;
@@ -270,5 +272,11 @@
           .TPmarginbottom
           {
             margin-bottom: 2vh;
+          }
+          .teacher_container
+          {
+              margin-top: 6vh;
+              margin-left: 0vh !important;
+              margin-right: 0vh !important;
           }
 }

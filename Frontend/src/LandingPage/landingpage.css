@@ -545,8 +545,13 @@ i:hover {
   margin-right: 5vh;
   transition: all 0.5s;
 }
+
 ::placeholder {
   color: #6fb5e4bf !important;
+}
+.inputbox::placeholder {
+  color: #6fb5e4bf !important;
+
   font-weight: 500 !important;
 }
 .inputhover:hover {
