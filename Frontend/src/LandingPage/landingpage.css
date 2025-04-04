@@ -500,7 +500,7 @@ i:hover {
   margin-right: 5vh;
   transition: all .5s;
 }
-::placeholder
+.inputbox::placeholder
 {
   color:#6fb5e4bf !important;
   font-weight: 500 !important;
