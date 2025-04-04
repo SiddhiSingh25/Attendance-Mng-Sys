@@ -18,6 +18,7 @@ function Page1() {
               <span class="text-blue-500"></span>
               <div className="h-36">
                 <Typewriter
+                  style={{}}
                   words={[
                     "Automate Attendance with Ease!",
                     "Smart Attendance, Smarter Management! ",

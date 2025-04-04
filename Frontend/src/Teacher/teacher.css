@@ -1,0 +1,274 @@
+.teacher_container
+{
+    margin-top: 6vh;
+}
+
+.leftcontainer
+{
+    background-color: #cbddf0;
+    padding-top: 2vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-bottom: 2vh;
+    text-align: center;
+    BORDER-RADIUS: 0vh 5vh 5vh 0vh;
+}
+
+.imgteacherpro
+{
+    height: 22vh;
+    width: 22vh;
+    border-radius: 50%;
+    border-bottom: 8px solid #477b9d;
+    border-left: 8px solid #477b9d;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+}
+
+.teacher_name
+{
+    color: #477b9d;
+    font-size: 3vh;
+    font-weight: bolder;
+    font-family:'Montserrat', sans-serif;
+    border-bottom: .3vh solid #477b9d;
+    border-radius: 25%;
+    padding-bottom: 1vh;
+}
+
+.lechturer
+{
+    color: #477b9d;
+    font-size: 2.5vh;
+    font-weight: bolder;
+    font-family:'Montserrat', sans-serif;
+}
+
+.TPbackground
+{
+  background-color: #dce8f5c5;
+}
+
+.subject
+{
+    height: 10vh;
+    width: 25vh;
+    border-radius: 1vh;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 3vh;
+    padding-left: .5vh;
+    padding-right: .5vh;
+    font-weight:400;
+    margin-bottom: 3vh;
+}
+
+.subject:hover
+{
+    height: 10vh;
+    width: 25vh;
+    border-radius: 5vh;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 3vh;
+    padding-left: .5vh;
+    padding-right: .5vh;
+    font-weight:500;
+    margin-bottom: 3vh;
+    background-color: white;
+    transition:all .6s;
+}
+
+.sub1
+{
+    background-color: #e9efff;
+    border: 2px solid #a6b8f3;
+    color: #7f97ef;
+}
+
+.sub2
+{
+    background-color: #e6feff;
+    border: 2px solid #a1dee8;
+    color: #67cadb;
+}
+
+.sub3
+{
+    background-color: #ffbabdb2;
+    border: 2px solid #ffa4ae;
+    color: #ff869c;
+}
+
+.sub4
+{
+    background-color: #ffe7ba;
+    border: 2px solid #fea35c;
+    color: #ffae67;
+}
+
+.selectsemester
+{
+    height: 10vh;
+    width: 25vh;
+    border-radius: 1vh;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 0vh;
+    font-weight:400;
+    margin-bottom: 3vh; 
+}
+
+.selectsemester:hover
+{
+    height: 10vh;
+    width: 25vh;
+    border-radius: 5vh;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 0vh;
+    font-weight:500;
+    margin-bottom: 3vh; 
+    background-color: white;
+    transition:all .6s;
+}
+
+.selectbranch
+{
+    height: 10vh;
+    width: 25vh;
+    border-radius: 1vh;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 0vh;
+    font-weight:400;
+    margin-bottom: 3vh; 
+}
+
+.selectbranch:hover
+{
+    height: 10vh;
+    width: 25vh;
+    border-radius: 5vh;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 0vh;
+    font-weight:500;
+    margin-bottom: 3vh; 
+    background-color: white;
+    transition:all .6s;
+}
+
+
+.buttonTeacherPro
+{
+    height: 10vh;
+    width: 25vh;
+    border-radius: 1vh;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 0vh;
+    font-weight:400;
+    margin-bottom: 3vh;  
+}
+
+
+.buttonTeacherPro:hover
+{
+    height: 10vh;
+    width: 25vh;
+    border-radius: 5vh;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 0vh;
+    font-weight:500;
+    margin-bottom: 3vh;  
+    transition:all .6s;
+    background-color: white;
+    border: 2px solid #fea35c;
+    color: #ffae67;
+}
+
+@media (max-width: 768px) {
+      .subject{
+        padding-bottom: 1.5rem;
+        height: 8vh;
+        width: 20vh;
+        font-size: 1rem;
+      }
+      .selectbranch {
+        height: 8vh;
+        width: 20vh;
+        font-size: 1rem;
+      }
+      .selectsemester{
+        height: 8vh;
+        width: 20vh;
+        font-size: 1rem;
+      }
+      .buttonTeacherPro{
+        display: flex;
+        gap: 1.5rem;
+        height: 8vh;
+        width: 20vh;
+        font-size: 1rem;
+      }
+      .sub1{
+        display: flex;
+        gap: 1.5rem;
+        text-align: center;
+        margin-right: 1.5rem;
+        padding-top: 1.2rem;
+        padding-left: 3rem;
+        margin-top: -4vh;
+    }
+    
+      .sub2{
+        display: flex;
+        gap: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-top: 1.2rem;
+        margin-top: -4vh;
+        text-align: center;
+      } 
+       .sub3{
+        display: flex;
+        gap: 1.5rem;
+        padding-bottom: 1.5rem;
+        margin-left: 0.5vh;
+        text-align: center;
+        padding-top: 1.2rem;
+      }
+      .sub4 {
+        display: flex;
+        gap: 1.5rem;
+        padding-bottom: 1.5rem;
+        padding-top: 1.2rem;
+        margin-left: -2vh;
+       padding-left: 1.5rem;
+      }
+      .divtakeattend, .divselectsem
+      {
+        margin-top: -5vh;
+      }
+      .buttonTeacherPro:hover,  .selectbranch:hover, .selectsemester:hover
+        {
+            height: 8vh;
+            width: 20vh;
+            font-size: 1rem;
+            padding-top: 1.2rem;
+        }
+        .subject:hover
+          {
+            height: 8vh;
+            width: 20vh;
+            font-size: 1rem;
+            padding-top: 1.2rem;
+            text-align: center;
+            padding-left: 6vh;
+          }
+          .TPmarginbottom
+          {
+            margin-bottom: 2vh;
+          }
+}
